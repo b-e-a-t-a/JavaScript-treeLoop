@@ -59,3 +59,21 @@ function drawTree(h) {
   }
   return treeHeight;
 }
+
+function drawTreeAmb(h) {
+
+  for (var i = 1 ; i <= h; i++) {
+    var star = '*';
+    var space = '';
+    for (var j = h; j > i; j--) {
+      space +=' ';  
+    }
+    for (var j = 1; j < i; j++) {
+      star += '**'
+    }
+    console.log(space, star);
+  }
+}
+
+drawTreeAmb(10);
+
